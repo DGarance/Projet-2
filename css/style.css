@@ -1,0 +1,789 @@
+/**Version desktop de la maquette**/
+/*Propriétés générales*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: medium;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+/*Header*/
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  width: 150px;
+}
+/*nav*/
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+nav li {
+  margin: 10px;
+}
+
+/*Animation de menu nav*/
+nav a {
+  color: #181818;
+  padding: 23px;
+}
+nav a:hover {
+  color: #0065fc;
+  transition: 0.2s;
+  border-top: 3px solid #0065fc;
+}
+
+/*First section Title/Search Bar/Filters/Info*/
+/*Title and presentation*/
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 15px;
+  font-weight: bolder;
+}
+p {
+  font-size: 14px;
+}
+
+/*Search Bar*/
+.form {
+  margin: 15px 0 15px 0;
+}
+.form_bar {
+  display: flex;
+  align-items: center;
+}
+
+.fa-location-dot {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 19px;
+  padding: 10px;
+  border: 2px solid #f2f2f2;
+  background: #f2f2f2;
+  border-radius: 10px 0 0 10px;
+}
+
+input {
+  font-weight: bold;
+  font-size: medium;
+  font-family: inherit;
+  padding: 10px;
+  border: 2px solid #f2f2f2;
+}
+::placeholder {
+  color: #000;
+}
+.phone_loupe {
+  display: none;
+}
+button {
+  padding: 10px;
+  border: 3px solid #0065fc;
+  background-color: #0065fc;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+/*Filters*/
+.filters {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 15px 0;
+}
+
+.filters h2 {
+  font-size: large;
+  margin-right: 20px;
+}
+
+.filter_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter_effect {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #f2f2f2;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.filters .fas {
+  padding: 13px;
+  background-color: #f2f2f2;
+  color: #0065fc;
+  font-size: 12px;
+  border-radius: 50%;
+}
+
+.filters p {
+  margin: 12px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.filter_effect:hover,
+.filter_effect:hover.fas {
+  background-color: #deebff;
+  transition: 0.5s;
+}
+
+/*Info*/
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.fa-info {
+  border: 1px solid #f2f2f2;
+  color: #0065fc;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 10px;
+}
+/**Second section /Marseille hebergement/Populaires**/
+/*Présentation des cartes*/
+.marseille {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.heb_container {
+  width: 63%;
+  background-color: #f2f2f2;
+  padding: 0 20px 0 20px;
+  border-radius: 10px;
+}
+
+#H_Marseille {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+}
+
+.card_display {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card_info {
+  width: 100%;
+  height: 100px;
+  margin: -10px 0 0 10px;
+}
+
+.card_heb {
+  width: 32%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+  box-shadow: 4px 4px 6px #e6e6e6;
+}
+.card_heb img {
+  padding: 3px;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card_info p,
+h3 {
+  margin: 9px;
+}
+
+/*Star décoration*/
+.blue_star {
+  color: #0065fc;
+}
+.gray_star {
+  color: #b8b8b8;
+}
+
+/*Populaires*/
+aside {
+  background-color: #f2f2f2;
+  width: 33%;
+  border-radius: 15px;
+  margin-right: 12px;
+}
+.pop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 25px;
+}
+.pop .fa-star {
+  font-size: large;
+}
+.heb_pop {
+  width: 100%;
+}
+
+.heb_plus_pop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.card_pop {
+  width: 100%;
+  height: 140px;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 4px 4px 6px #e6e6e6;
+  margin-bottom: 4%;
+}
+
+.card_pop img {
+  width: 100%;
+  height: 132px;
+  border-radius: 15px 0 0 15px;
+  object-fit: cover;
+}
+.card_left {
+  width: 50%;
+}
+.card_right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.card_right h3 {
+  margin: 10px 0 0 8px;
+}
+.card_right p {
+  width: 100%;
+  margin: 10px 0 0 8px;
+}
+
+/*Third section /Marseille Activités*/
+#A_marseille {
+  margin-top: 3%;
+  padding-left: 1%;
+}
+.a_marseille {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 520px;
+}
+
+.large_card {
+  width: 23%;
+  height: 440px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 4px 4px 6px #e6e6e6;
+}
+.large_card h3 {
+  margin: 9px;
+}
+.card_activity {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+.card_activity h3 {
+  margin: 9px;
+}
+
+/*Cartes différentes tailles*/
+.pomegues_card {
+  width: 100%;
+  height: 265px;
+  box-shadow: 4px 4px 6px #e6e6e6;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.frioul_card {
+  width: 100%;
+  height: 145px;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 4px 4px 6px #e6e6e6;
+}
+.dame_card {
+  width: 100%;
+  height: 210px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 4px 4px 6px #e6e6e6;
+}
+.longchamp_card {
+  width: 100%;
+  height: 210px;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 4px 4px 6px #e6e6e6;
+}
+/*Images différentes tailles*/
+.large_card img {
+  width: 100%;
+  height: 385px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.pomegues_card img {
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.frioul_card img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.dame_card img {
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.longchamp_card img {
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+/*Footer*/
+footer {
+  background-color: #f2f2f2;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.footer_column {
+  width: 25%;
+  margin-right: 4px;
+}
+.footer_ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.footer_li {
+  padding-top: 1%;
+}
+
+/*Media queries*/
+/*Desktop à partir de 992px*/
+@media screen and (min-width: 992px) {
+  body {
+    max-width: 1440px;
+    margin: auto;
+  }
+  main {
+    margin-left: 8px;
+  }
+  h1 {
+    font-size: large;
+  }
+  h2 {
+    font-size: medium;
+  }
+  h3 {
+    font-size: 14px;
+  }
+}
+/*Tablette à partir de 768px*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    max-width: 100%;
+    height: 100%;
+    font-size: medium;
+  }
+  main {
+    margin-right: 18px;
+  }
+  h1 {
+    font-size: large;
+  }
+  /*Header desktop et tablette*/
+  header {
+    margin-top: 8px;
+  }
+
+  header img {
+    height: 90px;
+  }
+  nav ul {
+    margin-top: 8px;
+  }
+  .marseille {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .heb_container {
+    width: 100%;
+    padding: 0 25px;
+    margin-bottom: 40px;
+  }
+
+  /*Populaire desktop et tablette*/
+  aside {
+    width: 100%;
+  }
+}
+
+/*Mobile et Tablettes à partir de 356px et 767px*/
+@media screen and (min-width: 356px) and (max-width: 767px) {
+  body {
+    font-size: 17px;
+    margin-right: auto;
+  }
+  /*Header mobile et tablette*/
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header img {
+    margin: auto;
+    margin-top: 30px;
+    height: 50px;
+    padding-left: 40px;
+  }
+
+  /*Nav mobile et tablette*/
+  nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+  nav ul {
+    padding-inline: 0;
+  }
+  nav li {
+    margin: 0;
+    width: 50%;
+  }
+  nav a:hover {
+    color: #0065fc;
+    border-top: none;
+    border-bottom: 3px solid #0065fc;
+  }
+  .li_nav_effect {
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: block;
+    text-align: center;
+    border-bottom: 4px solid #f2f2f2;
+  }
+
+  /*Main mobile et tablette*/
+  h1 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  /*Form mobile et tablette*/
+  .form {
+    margin-top: 20px;
+  }
+  .form input {
+    width: 100%;
+    border: 2px solid #e6e6e6;
+  }
+  button span {
+    display: none;
+  }
+  .phone_loupe {
+    display: block;
+    border-radius: 14px;
+    color: #fff;
+    background-color: #0065fc;
+  }
+
+  /*Filter mobile et tablette*/
+  .filters {
+    display: flex;
+    flex-direction: column;
+  }
+  .filters h2 {
+    margin-right: 80%;
+  }
+  .filter_list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .info {
+    margin-bottom: 3%;
+  }
+
+  /*Hebergements mobile et tablette*/
+  .marseille {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .heb_container {
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+  }
+  .card_heb {
+    width: 100%;
+  }
+  /*Populaire mobile et tablette*/
+  aside {
+    width: 100%;
+    border-radius: 0;
+    padding-bottom: 8%;
+  }
+  .heb_plus_pop {
+    width: 100%;
+  }
+  /*Activités mobile et tablette*/
+  .a_marseille {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+  }
+  .large_card {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 8%;
+  }
+  .card_activity {
+    width: 100%;
+    height: 222px;
+  }
+  .large_card img {
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .frioul_card {
+    display: none;
+  }
+  .frioul_card img {
+    display: none;
+  }
+  .card_activity img {
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  /*Footer mobile et tablette*/
+  footer {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 63%;
+  }
+  .footer_column {
+    width: 100%;
+  }
+  .footer_li {
+    margin-bottom: 4%;
+  }
+}
+
+/*Mobile à partir de 355px*/
+@media screen and (max-width: 355px) {
+  body {
+    font-size: 15px;
+  }
+  /*Header mobile*/
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header img {
+    margin: auto;
+    margin-top: 30px;
+    height: 50px;
+    padding-left: 40px;
+  }
+  /*Nav mobile*/
+  nav ul {
+    padding-inline: 0;
+  }
+  nav li {
+    margin: 0;
+    width: 50%;
+  }
+  nav a:hover {
+    color: #0065fc;
+    border-top: none;
+    border-bottom: 3px solid #0065fc;
+  }
+  .li_nav_effect {
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: block;
+    text-align: center;
+    border-bottom: 4px solid #f2f2f2;
+  }
+  /*Main mobile*/
+  h1 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  /*Form mobile*/
+  .form {
+    margin-top: 20px;
+  }
+  .form input {
+    width: 100%;
+    border: 2px solid #e6e6e6;
+  }
+  button span {
+    display: none;
+  }
+  .phone_loupe {
+    display: block;
+    border-radius: 14px;
+    color: #fff;
+    background-color: #0065fc;
+  }
+  /*Filter mobile*/
+  .filters {
+    display: flex;
+    flex-direction: column;
+  }
+  .filters h2 {
+    margin-right: 80%;
+  }
+  .filter_list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .filter_effect {
+    margin: 1%;
+  }
+  /*Info mobile*/
+  .info {
+    margin-bottom: 3%;
+  }
+  /*Hebergements mobile*/
+  .marseille {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .heb_container {
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+  }
+  .card_heb {
+    width: 100%;
+  }
+  /*Populaire mobile*/
+  aside {
+    width: 100%;
+    border-radius: 0;
+    padding-bottom: 8%;
+  }
+  .heb_plus_pop {
+    width: 100%;
+  }
+  /*Activités mobile*/
+  .a_marseille {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+  }
+  .large_card {
+    width: 100%;
+    height: 222px;
+    margin-bottom: 8%;
+  }
+  .card_activity {
+    width: 100%;
+    height: 222px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .frioul_card {
+    display: none;
+  }
+  .frioul_card img {
+    display: none;
+  }
+
+  .large_card img {
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .card_activity img {
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  /*Footer mobile*/
+  footer {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 63%;
+  }
+  .footer_column {
+    width: 100%;
+  }
+  .footer_li {
+    margin-bottom: 4%;
+  }
+}
