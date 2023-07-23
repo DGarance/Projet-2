@@ -1,11 +1,11 @@
 # Projet n°2| Parcours Développeur Web| OpenClassrooms 
 ## BOOKI | Transformez une maquette en site web avec HTML & CSS :computer:
 ## Technologies utilisées
-- :html: HTML
-- :css: CSS
+- 📄 HTML
+- 🎨 CSS
 ## Contexte
 
-Ce projet a été réalisé dans le cadre de ma formation de développeuse web, d'une durée de 90 heures, chez OpenClassrooms. L'objectif principal était d'intégrer les maquettes desktop, tablette et mobile du site Booki en utilisant HTML :page_facing_up: et CSS :art:.
+Ce projet a été réalisé dans le cadre de ma formation de développeuse web,chez OpenClassrooms. L'objectif principal était d'intégrer les maquettes desktop, tablette et mobile du site Booki en utilisant HTML :page_facing_up: et CSS :art:.
 
 ## Scénario
 
@@ -15,6 +15,7 @@ trouver des hébergements et des activités dans la ville de leur choix.
 
 Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS. Pour cela, vous travaillez en étroite
 collaboration avec Sarah, la CTO, et Loïc, l'UI designer.
+
 ## Contenu du projet
 
 Le projet est composé des fichiers suivants :
