@@ -54,3 +54,10 @@ Cette expérience m'a également sensibilisée à l'importance du code sémantiq
 Pour mes projets futurs, j'aimerais continuer à améliorer mes compétences en gestion des media queries CSS pour une meilleure adaptation aux différents appareils. De plus, je vais travailler sur l'optimisation des images pour garantir des temps de chargement plus rapides.
 
 Je suis satisfaite des résultats obtenus avec ce projet, et je suis prête à relever de nouveaux défis dans le domaine du développement web.
+
+
+## Liens
+
+- [Lien vers le repository GitHub](https://github.com/DGarance/Projet-2)
+- [Lien vers la version en ligne du site Internet](https://dgarance.github.io/Projet-2/)
+
