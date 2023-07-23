@@ -1,4 +1,4 @@
-# Projet n°2| Parcours Développeur Web| OpenClassrooms 
+# Projet n°2 | Parcours Développeur Web | OpenClassrooms 
 ## BOOKI | Transformez une maquette en site web avec HTML & CSS :computer:
 ## Technologies utilisées
 - 📄 HTML
